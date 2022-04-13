@@ -1,0 +1,13 @@
+.logo_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.logo_container > a {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 37.5px;
+  color: var(--primary-color);
+}

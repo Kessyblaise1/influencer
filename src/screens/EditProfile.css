@@ -1,0 +1,118 @@
+.profile_edit{
+    background: #fff;
+    height: 100vh;
+}
+
+.display_container {
+  height: 351px;
+  position: relative;
+}
+
+.icons_container {
+  position: absolute;
+  width: 100vw;
+  padding: 20px;
+}
+
+.icons_container,
+.right_panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back_arrow {
+  width: 43px;
+  height: 41px;
+  background: rgba(255, 255, 255, 0.2);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 4px;
+}
+
+.back_arrow img {
+  width: 9px;
+  height: 18px;
+}
+
+.bell {
+  width: 31px;
+  height: 31px;
+  margin-right: 10px;
+}
+
+.profile_image {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 45px;
+  height: 45px;
+}
+
+.profile_image img {
+  width: 45px;
+  height: 45px;
+}
+
+.influencer_details {
+  background: #fff;
+  transform: translateY(-25px);
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+  padding: 20px;
+}
+
+.display_name {
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 28.56px;
+}
+
+.real_name {
+  font-size: 12.32px;
+  line-height: 18.48px;
+}
+
+.followers_card_container {
+  margin-top: 19px;
+  display: flex;
+  width: auto;
+  flex-direction: row;
+  overflow-y: scroll;
+}
+
+.followers_card_container::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  width: 90px;
+  min-width: 90px;
+  height: 90px;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-right: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.number {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16.6889px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.platform {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #898989;
+}

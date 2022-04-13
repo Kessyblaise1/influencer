@@ -1,0 +1,21 @@
+.login_image {
+  margin: 25px 0;
+}
+
+.login_button {
+  width: 90%;
+  max-width: 335px;
+  height: 47px;
+  background: var(--facebook-blue);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.login_button i {
+  margin-right: 6px;
+  font-size: 22px;
+}

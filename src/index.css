@@ -1,0 +1,56 @@
+:root {
+  --primary-color: #485bff;
+  --facebook-blue: #1d518d;
+  --prompt-text: #767272;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+  max-width: 100%;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f8f4f0;
+  height: 100vh;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.screen {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.prompt {
+  font-size: 17px;
+  color: var(--prompt-text);
+  font-weight: 500;
+  line-height: 26px;
+  margin-top: 24px;
+}
+
+.primary_button {
+  width: 100%;
+  height: 40px;
+  background: #ff6480;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 2rem;
+}
