@@ -7,23 +7,23 @@ const Editprofile = () => {
       <div className="display_container">
         <div className="icons_container">
           <div className="back_arrow">
-            <img src="./images/arrow.png" alt="arrow button" />
+            <img src="./images/arrow.svg" alt="arrow button" />
           </div>
           <div className="right_panel">
             <img
-              src={"./images/notification.png"}
+              src={"./images/notification.svg"}
               className="bell"
               alt="bell icon notification button"
             />
             <div className="profile_image">
               <img
-                src="./influencers/lady.png"
+                src="./influencers/lady.svg"
                 alt="random girl profile images brown background girl"
               />
             </div>
           </div>
         </div>
-        <img src="./influencers/lady.png" alt="random girl profile images brown background girl" />
+        <img src="./influencers/lady.svg" alt="random girl profile images brown background girl" />
       </div>
       <div className="influencer_details">
         <p className="display_name">Cara Delevingn</p>

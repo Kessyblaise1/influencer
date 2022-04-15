@@ -1,34 +1,34 @@
-import './GuestScreen.css'
-import { Link } from 'react-router-dom'
-import React from 'react'
+import "./GuestScreen.css";
+import { Link } from "react-router-dom";
+import React from "react";
 
 // Components
-import Logocomponent from '../components/LogoComponent'
+import Logocomponent from "../components/LogoComponent";
 
 const GuestScreen = () => {
   return (
-    <div className='guestscreen screen'>
+    <div className="guestscreen screen">
       <Logocomponent />
 
-      <p className='prompt'>Select your role</p>
+      <p className="prompt">Select your role</p>
 
-      <div className='role_container'>
-        <Link to={'/login'} className='role'>
+      <div className="role_container">
+        <Link to={"/login"} className="role">
           <figure>
-            <img src={'./images/brandImage.png'} alt={'brand'} className='role_image' />
+            <img src={"./images/brandImage.svg"} alt={"brand"} className="role_image" />
           </figure>
-          <p className='role_text'>Brand</p>
+          <p className="role_text">Brand</p>
         </Link>
 
-        <Link to={'/login'} className='role'>
+        <Link to={"/login"} className="role">
           <figure>
-            <img src={'./images/influencer.png'} alt={'brand'} className='role_image' />
+            <img src={"./images/influencer.svg"} alt={"brand"} className="role_image" />
           </figure>
-          <p className='role_text'>Influencer</p>
+          <p className="role_text">Influencer</p>
         </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default GuestScreen
+export default GuestScreen;
