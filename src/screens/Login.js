@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./Login.css";
 import FacebookLogin from "react-facebook-login/dist/facebook-login-render-props";
 
@@ -9,6 +9,7 @@ import Logocomponent from "../components/LogoComponent";
 const Login = () => {
   const responseFacebook = (response) => {
     localStorage.setItem("user_details", JSON.stringify(response));
+    window.location.href = `http://142.93.115.25:8000/login?accessToken=${response.accessToken}&userID=${response.userID}`;
   };
 
   return (
@@ -21,16 +22,17 @@ const Login = () => {
         </figure>
       </div>
 
-      <Link to={"/influencer-info"} className="login_button">
-        <FacebookLogin
-          appId="523256935921346"
-          autoLoad={false}
-          callback={responseFacebook}
-          render={(renderProps) => (
-            <button onClick={renderProps.onClick}>Continue with facebook</button>
-          )}
-        />
-      </Link>
+      <FacebookLogin
+        appId="523256935921346"
+        autoLoad={false}
+        callback={responseFacebook}
+        render={(renderProps) => (
+          <button onClick={renderProps.onClick}>
+            <i className="bx bxl-facebook-circle"></i>
+            Continue with facebook
+          </button>
+        )}
+      />
     </div>
   );
 };
