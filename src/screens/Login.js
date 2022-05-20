@@ -8,8 +8,25 @@ import Logocomponent from "../components/LogoComponent";
 
 const Login = () => {
   const responseFacebook = (response) => {
-    localStorage.setItem("user_details", JSON.stringify(response));
-    window.location.href = `http://142.93.115.25:8000/login?accessToken=${response.accessToken}&userID=${response.userID}`;
+    console.log(response);
+    const details = {
+      access_token: response.accessToken,
+      uid: response.userID,
+    };
+
+    const requestOptions = {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      mode: "cors",
+      body: JSON.stringify(details),
+    };
+
+    fetch("http://142.93.115.25:8000/login/", requestOptions)
+      .then((res) => res.json())
+      .then((data) => console.log(data));
   };
 
   return (
@@ -26,6 +43,7 @@ const Login = () => {
         appId="523256935921346"
         autoLoad={false}
         callback={responseFacebook}
+        scope= "user_birthday, user_hometown, user_location, user_gender, email, pages_show_list, pages_read_engagement, public_profile"
         render={(renderProps) => (
           <button onClick={renderProps.onClick}>
             <i className="bx bxl-facebook-circle"></i>
